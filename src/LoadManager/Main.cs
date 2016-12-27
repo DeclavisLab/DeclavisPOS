@@ -9,7 +9,7 @@ namespace LoadManager
 {
     public class Main
     {
-        public const string SYSTEMPATH = @"C:\Users\Alex\Desktop\Kassensystem_2\Interface\bin\Debug\";//"C:\DeclavisCompany\Kassensystem\";
+        public const string SYSTEMPATH = @"C:\DeclavisCompany\Kassensystem\";
         public static string ADMINPW;
         public static string ZPW;
         private static int AMOUNTWG;
