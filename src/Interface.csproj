@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2787FCDA-48F4-466F-8635-1843788022DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interface</RootNamespace>
+    <AssemblyName>Interface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>Kassensystem.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Interface.Startup</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>inc\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassPLU\DIV.cs" />
+    <Compile Include="ClassPLU\PLU.cs" />
+    <Compile Include="ClassPLU\WG.cs" />
+    <Compile Include="ClassTable\PRINT.cs" />
+    <Compile Include="ClassTable\Table.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BILL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BILL.Designer.cs">
+      <DependentUpon>frm_BILL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DIV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DIV.Designer.cs">
+      <DependentUpon>frm_DIV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_help.Designer.cs">
+      <DependentUpon>frm_help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_OT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_OT.Designer.cs">
+      <DependentUpon>frm_OT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_splashscreen.Designer.cs">
+      <DependentUpon>frm_splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Storno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Storno.Designer.cs">
+      <DependentUpon>frm_Storno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_update.Designer.cs">
+      <DependentUpon>frm_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadManager\IniFile.cs" />
+    <Compile Include="LoadManager\Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveManager\frm_Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveManager\frm_Export.Designer.cs">
+      <DependentUpon>frm_Export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveManager\Log.cs" />
+    <Compile Include="SaveManager\Main.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BILL.resx">
+      <DependentUpon>frm_BILL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DIV.resx">
+      <DependentUpon>frm_DIV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_help.resx">
+      <DependentUpon>frm_help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_OT.resx">
+      <DependentUpon>frm_OT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_splashscreen.resx">
+      <DependentUpon>frm_splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Storno.resx">
+      <DependentUpon>frm_Storno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_update.resx">
+      <DependentUpon>frm_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SaveManager\frm_Export.resx">
+      <DependentUpon>frm_Export.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SaveManager\gdpdu-01-08-2002.dtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_blue_coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Declavis Logo 3_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\declavis Logo kasse1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kassensystem.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
