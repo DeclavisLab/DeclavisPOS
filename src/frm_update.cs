@@ -32,8 +32,7 @@ namespace Interface
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WebClient wc = new WebClient();
-            //wc.Credentials = new NetworkCredential("a6000743", "golfl1ma");
+            WebClient wc = new WebClient();            
             wc.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
             wc.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
             wc.DownloadFileAsync(new Uri(Startup.Server+"update"+ver+".zip"), Application.StartupPath + "\\update.zip");
